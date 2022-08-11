@@ -1,0 +1,12 @@
+<article>
+  <h1>Renderização condicional</h1>
+  <ul>
+    <li *ngIf="canShow">Ok</li>
+    <li *ngIf="name == 'Raphael'; else nameNotFound">O nome é Raphael</li>
+    <app-eventos></app-eventos>
+    <ng-template #nameNotFound>
+      <li>Nome não encontrado</li>
+    </ng-template>
+    <app-directives></app-directives>
+  </ul>
+</article>

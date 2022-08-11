@@ -1,0 +1,15 @@
+.list-style {
+    border: none;
+    width: fit-content;
+
+    a {
+        font-size: 11pt;
+        text-decoration: none;
+        color: yellowgreen;
+        font-weight: 500;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

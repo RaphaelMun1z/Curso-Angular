@@ -1,0 +1,32 @@
+h1 {
+    margin-bottom: 50px;
+}
+ul {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin: 10px 0;
+
+    li {
+        border: none;
+        padding: 10px;
+
+        a {
+            font-size: 11pt;
+            text-decoration: none;
+            color: yellowgreen;
+            font-weight: 500;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        ul {
+            li:nth-child(2) {
+                a {
+                    color: red;
+                }
+            }
+        }
+    }
+}

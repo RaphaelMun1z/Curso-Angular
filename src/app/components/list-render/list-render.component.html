@@ -1,0 +1,24 @@
+<article>
+  <h1>Renderização de lista</h1>
+  <ul *ngFor="let animal of animals">
+    <li>
+      Nome: <b>{{ animal.name }}</b>
+    </li>
+    <li>
+      Tipo: <b>{{ animal.type }}</b>
+    </li>
+    <li>
+      <ul>
+        <li>
+          <a (click)="showAge(animal)">Mostrar idade</a>
+        </li>
+        <li>
+          <a (click)="removeAnimal(animal)">Excluir</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <ul>
+    <li>{{ animalDetails }}</li>
+  </ul>
+</article>
